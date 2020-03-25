@@ -6,7 +6,7 @@ body {
 	font-size: 16px;
 	color: #fff;
 	font-family: "Roboto", sans-serif;
-	background: #0a090a url("../img/main-bg.jpg") no-repeat top center;
+	background: #0a090a url("../img/main-bg.png") no-repeat top center;
 }
 
 .container {
@@ -19,6 +19,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	padding-top: 2.81rem;
+	margin-bottom: 35%;
 }
 
 .site-header .logo {
@@ -82,4 +83,175 @@ body {
 	height: 2.5rem;
 	border-radius: 50%;
 	object-fit: cover;
+}
+
+.main {
+
+}
+
+.main .title {
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	font-size: 3rem;
+	line-height: 4rem;
+	color: #fff;
+	margin-bottom: 0.43rem;
+}
+
+.main .title-en {
+	display: block;
+	font-family: Roboto;
+	font-size: 1.25rem;
+	line-height: 1.43rem;
+	color: #787878;
+	margin-bottom: 2.375rem;
+}
+
+.main .info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 6.87rem;
+}
+
+.main .info .movie-info {
+	display: flex;
+	align-items: center;
+}
+
+.main .info .movie-info .tag {
+	color: #333;
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin-right: 1.25rem;
+}
+
+.main .info .movie-info .country {
+	margin-right: 1.25rem;
+}
+
+.main .info .movie-info .play {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+}
+.main .info .movie-info .play:before {
+	content: "";
+	background-image: url("../img/play.svg");
+	background-position: center;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	margin-right: 1rem;
+}
+
+
+.main .info .more {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+}
+
+.main .info .more:after {
+	content: "";
+	background-image: url("../img/play.svg");
+	background-position: center;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	margin-left: 1rem;
+	transform: rotate(90deg);
+}
+
+
+.main .content {
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	border-radius: 3px;
+	color: #000;
+	padding: 50px;
+	margin-bottom: 2rem;
+}
+
+.main .content .short-info{
+	display: flex;
+	flex-direction: column;
+}
+
+.main .content .short-info .poster{
+	width: 11.375rem;
+	height: 16.25rem;
+	margin-top: -85px;
+	margin-bottom: 1.25rem;
+}
+
+.main .content .short-info .button{
+	border: none;
+	background: #FF8F27;
+	padding: 10px 46px;
+	color: #fff;
+	margin-bottom: 1.875rem;
+}
+
+.main .content .short-info .actors-title{
+	padding: 0;
+	margin: 0;
+	font-family: Roboto;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 150%;
+	margin-bottom: 10px;
+}
+
+.main .content .short-info .actors-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main .content .short-info .actors-list .actors-list-item {
+	text-decoration: underline;
+}
+
+.main .content .full-info {
+	flex: 0.95
+}
+
+.main .content .full-info .tabs {
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 3rem;
+}
+
+.main .content .full-info .tabs .tabs-item {
+	text-decoration: none;
+	color: #000;
+}
+
+/* .main .content .full-info .tabs .tabs-item .bookmark-added{
+	background-color: #FF8F27;
+} */
+
+.main .content .full-info .full-content {
+	display: flex;
+}
+
+.main .content .full-info .full-content .tabs-content {
+
+}
+
+.main .content .full-info .full-content .tabs-content .text{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 2rem;
+	line-height: 140%;
 }
