@@ -12,6 +12,8 @@
             href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="css/animate.css" />
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
@@ -41,13 +43,18 @@
             </header>
 
             <main class="main">
-                <h1 class="title">Бэтмен</h1>
-                <small class="title-en">The Batman</small>
-                <div class="info">
+                <h1 class="title animated fadeInRight">Бэтмен</h1>
+                <small class="title-en animated fadeInRight">The Batman</small>
+                <div class="info animated fadeInUp delay-1s">
                     <div class="movie-info">
                         <span class="tag">Фильм</span>
                         <span class="country">США, 2021 год</span>
-                        <a href="#" class="play">Смотреть трейлер</a>
+                        <a
+                            data-fancybox
+                            href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg"
+                            class="play"
+                            >Смотреть трейлер</a
+                        >
                     </div>
                     <a href="#" class="more">Подробнее</a>
                 </div>
@@ -73,8 +80,10 @@
 
                     <div class="full-info">
                         <nav class="tabs">
-                            <a href="#" class="tabs-item">Описание</a>
-                            <a href="#" class="tabs-item">Рецензии</a>
+                            <a href="#about" class="tabs-item tabs-item-active"
+                                >Описание</a
+                            >
+                            <a href="#reviews" class="tabs-item">Рецензии</a>
                             <a href="#" class="tabs-item">Премьеры</a>
                             <a href="#" class="tabs-item">Актеры</a>
                             <a href="#" class="tabs-item">Награды</a>
@@ -82,14 +91,14 @@
                             <a href="#" class="tabs-item">Сайты</a>
                             <a href="#" class="tabs-item">
                                 <img
-                                    src="./img/bookmark.svg"
+                                    src="./img/bookmark-icon.svg"
                                     alt=""
                                     class="bookmark-added"
                                 />
                             </a>
                         </nav>
                         <div class="full-content">
-                            <div class="tabs-content">
+                            <div class="tabs-content visible" id="about">
                                 <p class="text">
                                     Предстоящий американский супергеройский
                                     фильм, основанный на одноимённых комиксах
@@ -137,13 +146,32 @@
                                     станет главным злодеем фильма.
                                 </p>
                             </div>
+                            <div class="tabs-content" id="reviews">
+                                <p class="text">sggrgsgrgsrgrgsg</p>
+                            </div>
                             <div class="subscribe">
-								<img src="./img/ads.jpg" alt="" class="ads">
-							</div>
+                                <h3 class="subscribe-title">
+                                    Подпишитесь на обновления
+                                </h3>
+                                <form action="" class="subscribe-form">
+                                    <input type="text" class="subsribe-input" />
+                                    <button class="subsribe-button">
+                                        <img
+                                            src="./img/button-check.svg"
+                                            alt=""
+                                        />
+                                    </button>
+                                </form>
+                                <img src="./img/ads.jpg" alt="" class="ads" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </main>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
